@@ -15,6 +15,7 @@ function AuthProvider({ children }) {
     if (token) {
       fetchProfile();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token]);
 
   const fetchProfile = async () => {
@@ -347,6 +348,7 @@ function MediaList({ status, types, title }) {
 
   useEffect(() => {
     fetchItems();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sortBy, sortOrder]);
 
   const fetchItems = async () => {
@@ -625,6 +627,7 @@ function Leaderboards() {
 
   useEffect(() => {
     fetchLeaderboards();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const fetchLeaderboards = async () => {
